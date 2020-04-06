@@ -1,6 +1,8 @@
 const soBored = ["cooking", "reading", "walking", "sewing", "sleeping"];
+const wantTo = ["shopping", "gathering", "going"];
 
-const deletion = soBored.pop();
+const blend = soBored.concat(wantTo);
 
-console.log(deletion);
-console.log(soBored);
+console.log(blend); //new array
+console.log(soBored); //original array
+console.log(wantTo); //other original array
