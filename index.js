@@ -1,6 +1,6 @@
-const soBored = ["cooking", "reading", "walking", "sewing"];
+const soBored = ["cooking", "reading", "walking", "sewing", "sleeping"];
 
-const addition = soBored.push("sleeping");
+const deletion = soBored.pop();
 
-console.log(addition);
+console.log(deletion);
 console.log(soBored);
