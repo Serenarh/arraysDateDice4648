@@ -1,8 +1,10 @@
 const soBored = ["cooking", "reading", "walking", "sewing", "sleeping"];
-const wantTo = ["shopping", "gathering", "going"];
 
-const blend = soBored.concat(wantTo);
+const spliced = soBored.splice(2, 0, "bicycling");
 
-console.log(blend); //new array
-console.log(soBored); //original array
-console.log(wantTo); //other original array
+console.log(spliced); //what was removed?
+console.log(soBored);
+
+const spliced2 = soBored.splice(2, 1, "yoga");
+console.log(spliced2); //what was removed?
+console.log(soBored);
