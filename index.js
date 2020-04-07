@@ -13,8 +13,13 @@ function calculateAge(dob) {
   // TODO: Pass the difference to 'ms2Years' to convert to years.
   const difference = today2 - firstDate;
   const age = ms2Years(difference);
+
+  // TODO: 'return' age in years (it should be 'floored' to nearest integer first!)
+  return Math.floor(difference);
 }
 
 function ms2Years(ms) {
   return ms / 31536000000;
 }
+
+console.log(calculateAge("May 6 2002") + " years old");
