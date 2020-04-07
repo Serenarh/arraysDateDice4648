@@ -17,7 +17,24 @@ let lost; //returned for lost
 function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
   //Added default parameters here
 
-  for (let i = 1; i <= numOfDice * numRolls; i++) {
+  for (let i = 1; i <= numOfDice * numRolls; i++) //i's limit is now number of dice times 10 rolls {
     ret.push(getRandomIntInclusive(1, numOfSides)); //generate Random #s between 1 and # of sides on the die
   }
+
+  for (let i = 0; i < ret.length; i++) {
+    if (ret[i] === 1) {
+      one.push(ret[i]);
+    } else if (ret[i] === 2) {
+      two.push(ret[i]);
+    } else if (ret[i] === 3) {
+      three.push(ret[i]);
+    } else if (ret[i] === 4) {
+      four.push(ret[i]);
+    } else if (ret[i] === 5) {
+      five.push(ret[i]);
+    } else if (ret[i] === 6) {
+      six.push(ret[i]);
+    }
+  }
+
 }
