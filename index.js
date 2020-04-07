@@ -11,8 +11,8 @@ const four = []; //array of fours rolled
 const five = []; //array of fives rolled
 const six = []; //array of sixes rolled
 const ret = []; //returned for rollDice
-let win; //returned for win
-let lost; //returned for lost
+let win = "You rolled 8 of a single number! You WIN!"; //returned for win
+let lost = "You LOST! No single number was rolled 8 times."; //returned for lost
 
 function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
   //Added default parameters here
@@ -49,12 +49,10 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
     five.length > 7 ||
     six.length > 7
   ) {
-    win = console.log("You rolled 8 of a single number! You WIN!");
+    return ret, win;
   } else {
-    lost = console.log("You LOST! No single number was rolled 8 times.");
+    return ret, lost;
   }
-
-  return ret, win, lost;
 }
 
 rollDice();
