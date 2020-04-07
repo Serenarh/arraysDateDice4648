@@ -9,6 +9,10 @@ function calculateAge(dob) {
   // TODO: Use 'Date.now()' to get 'now' in ms.
   const today = Date.now();
   const today2 = ms2Years(today);
+
+  // TODO: Pass the difference to 'ms2Years' to convert to years.
+  const difference = today2 - firstDate;
+  const age = ms2Years(difference);
 }
 
 function ms2Years(ms) {
