@@ -37,4 +37,17 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
     }
   }
 
+  if (
+    one.length > 7 ||
+    two.length > 7 ||
+    three.length > 7 ||
+    four.length > 7 ||
+    five.length > 7 ||
+    six.length > 7
+  ) {
+    win = console.log("You rolled 8 of a single number! You WIN!");
+  } else {
+    lost = console.log("You LOST! No single number was rolled 8 times.");
+  }
+
 }
