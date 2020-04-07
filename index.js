@@ -17,7 +17,11 @@ let lost; //returned for lost
 function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
   //Added default parameters here
 
-  for (let i = 1; i <= numOfDice * numRolls; i++) //i's limit is now number of dice times 10 rolls {
+  for (
+    let i = 1;
+    i <= numOfDice * numRolls;
+    i++ //i's limit is now number of dice times 10 rolls
+  ) {
     ret.push(getRandomIntInclusive(1, numOfSides)); //generate Random #s between 1 and # of sides on the die
   }
 
@@ -51,6 +55,7 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
   }
 
   return ret, win, lost;
-
-
 }
+
+rollDice();
+console.log(ret, one, two, three, four, five, six);
