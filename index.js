@@ -13,3 +13,5 @@ const six = []; //array of sixes rolled
 const ret = []; //returned for rollDice
 let win; //returned for win
 let lost; //returned for lost
+
+function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10)
