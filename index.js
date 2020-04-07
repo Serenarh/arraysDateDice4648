@@ -27,21 +27,22 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
 
   for (let i = 0; i < ret.length; i++) {
     if (ret[i] === 1) {
-      one.push(ret[i]);
+      one.push(ret[i]); //push a 1 into one array
     } else if (ret[i] === 2) {
-      two.push(ret[i]);
+      two.push(ret[i]); //push a 2 into two array
     } else if (ret[i] === 3) {
-      three.push(ret[i]);
+      three.push(ret[i]); //push a 3 into three array
     } else if (ret[i] === 4) {
-      four.push(ret[i]);
+      four.push(ret[i]); //push a 4 into four array
     } else if (ret[i] === 5) {
-      five.push(ret[i]);
+      five.push(ret[i]); //push a 5 into five array
     } else if (ret[i] === 6) {
-      six.push(ret[i]);
+      six.push(ret[i]); //push a 6 into six array
     }
   }
 
   if (
+    //check for win qualifications
     one.length > 7 ||
     two.length > 7 ||
     three.length > 7 ||
@@ -49,11 +50,10 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
     five.length > 7 ||
     six.length > 7
   ) {
-    return ret, win;
+    return ret, win; //Winner!
   } else {
-    return ret, lost;
+    return ret, lost; //Loser!
   }
 }
 
-rollDice();
-console.log(ret, one, two, three, four, five, six);
+console.log(rollDice(), one, two, three, four, five, six); //print win/loss + arrays for each number
