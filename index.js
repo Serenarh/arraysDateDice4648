@@ -1,4 +1,12 @@
-const soBored = ["cooking", "reading", "walking", "sewing", "sleeping"];
+/**
+ * TODO: Write a fxn. that will take in a 'date string,' and calculate age in years.
+ */
+function calculateAge(dob) {
+  // TODO: Use 'Date.parse()' to get dob in ms.
+  const birthDate = Date.parse(dob);
+  const firstDate = ms2Years(birthDate);
+}
 
-const present = soBored.includes("walking");
-console.log(present);
+function ms2Years(ms) {
+  return ms / 31536000000;
+}
