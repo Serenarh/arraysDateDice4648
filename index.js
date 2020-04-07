@@ -50,4 +50,7 @@ function rollDice(numOfDice = 2, numOfSides = 6, numRolls = 10) {
     lost = console.log("You LOST! No single number was rolled 8 times.");
   }
 
+  return ret, win, lost;
+
+
 }
