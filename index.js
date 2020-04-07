@@ -1,25 +1,15 @@
-/**
- * TODO: Write a fxn. that will take in a 'date string,' and calculate age in years.
- */
-function calculateAge(dob) {
-  // TODO: Use 'Date.parse()' to get dob in ms.
-  const birthDate = Date.parse(dob);
-  const firstDate = ms2Years(birthDate);
-
-  // TODO: Use 'Date.now()' to get 'now' in ms.
-  const today = Date.now();
-  const today2 = ms2Years(today);
-
-  // TODO: Pass the difference to 'ms2Years' to convert to years.
-  const difference = today2 - firstDate;
-  const age = ms2Years(difference);
-
-  // TODO: 'return' age in years (it should be 'floored' to nearest integer first!)
-  return Math.floor(difference);
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive.
 }
 
-function ms2Years(ms) {
-  return ms / 31536000000;
-}
-
-console.log(calculateAge("May 6 2002") + " years old");
+const one = []; //array of ones rolled
+const two = []; //array of twos rolled
+const three = []; //array of threes rolled
+const four = []; //array of fours rolled
+const five = []; //array of fives rolled
+const six = []; //array of sixes rolled
+const ret = []; //returned for rollDice
+let win; //returned for win
+let lost; //returned for lost
